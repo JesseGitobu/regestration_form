@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Page Title</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="#default" class="logo">CompanyLogo</a>
+        <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <ul class="tabs">
+        <li data-tab-target="#RegistrationForm" class="Registration-Form">Registration Form</li>
+        <li data-tab-target="#ResultTable" class="Result-Table">Result Table</li>
+
+    </ul>
+    <div class="tab-content">
+        <div id="RegistrationForm" data-tab-content class="active">
+            <div class="container">
+                <form id="regForm" name="RegForm" onsubmit="return formValidation()" method="post">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="Fullname" placeholder="Enter your full name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email" name="Email" placeholder="Enter your Email Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="phone" name="Phone" placeholder="Enter your Phone Number">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="address">Address</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="address" name="Address" placeholder="Enter your Address">
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div class="row">
+                        <input type="submit"  name="Submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="ResultTable" data-tab-content>
+        <h1>Pricing</h1>
+        <p>Some information on pricing</p>
+      </div>
+
+    <footer>
+        <p>Author: Hege Refsnes<br>
+            <a href="mailto:hege@example.com">hege@example.com</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
